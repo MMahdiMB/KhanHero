@@ -1,0 +1,60 @@
+.container {
+    padding: 1px;
+    display: flex;
+    margin: 1px 0;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main {
+    padding: 20px 0;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.button {
+    margin: auto auto 0 auto;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.questionpcontainer {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    justify-content: center;
+    margin: auto 20%;
+    top: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.questionp {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+hr {
+    display: block;
+    margin: 0.5rem auto;
+    color: gray;
+    opacity: 0.5;
+    border-style: inset;
+    border-width: 1px;
+    width: 80%;
+}
+
+@media (max-width: 500px) {
+    .questionpcontainer {
+        margin: auto 5%;
+    }
+    .questionp {
+        font-size: 17px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,26 @@
+.select {
+    background-color: orangered;
+    border: 0;
+    margin: 10px 0;
+    width: 150px;
+    cursor: pointer;
+    justify-items: center;
+    display: table-cell;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    height: 50px;
+}
+.arrow {
+    background-color: #39810e;
+    border: 0;
+    margin: 10px 0;
+    width: 50px;
+    display: table-cell;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    height: 50px;
+}
+

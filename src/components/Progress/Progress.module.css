@@ -1,0 +1,30 @@
+
+.Container {
+    padding-top: 10px;
+}
+
+.Progress_Bar {
+    width: 50%;
+    height: 14px;
+    margin: 0 auto;
+    border-radius: 55px;
+    background-color: #2e9cff50;
+    border: 0 solid gray;
+}
+
+.filler {
+    background-color: #2ba1ff;
+    background-image: linear-gradient(to right, #ff8932, #ff5b19);
+    width: 55%;
+    height: 100%;
+    opacity: 1;
+    border-radius: inherit;
+    transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+    .Progress_Bar {
+        width: 80%;
+        height: 12px;
+    }
+}

@@ -1,0 +1,99 @@
+.sidenav {
+    height: 100%;
+    width: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    justify-content: center;
+    /*box-shadow:1px 0 15px 1px gray;*/
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 3;
+}
+
+.span {
+    color: #2ba1ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px 0;
+}
+
+.span:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.MenuSVG{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 5px;
+}
+.MenuSVG:hover{
+    width: 20px;
+    color: #2ba1ff;
+    height: 20px;
+    float: left;
+    margin: 5px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    /*background-color: #2ba1ff;*/
+    width: 95%;
+    border-radius: 0 60px 60px 0;
+    font-size: 18px;
+    color: #282c34;
+    margin-top: 20px;
+    outline: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.ActiveLink {
+    background-color: #2ba1ff;
+    border: 0;
+    width: 95%;
+}
+
+.ActiveLink .sidenav a {
+    background-color: #39810e;
+    border: 0;
+    color:white ;
+    width: 95%;
+}
+
+@-webkit-keyframes run {
+    0% { margin-left: 0;}
+    100%{ margin-left : 50%;}
+}
+
+.sidenav a:hover {
+    /*transform: translateX(10%);*/
+    background-color: #2ba1ff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.open {
+    transform: translateX(0);
+}
+.close {
+    transform: translateX(-100%);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

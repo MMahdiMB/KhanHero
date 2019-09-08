@@ -1,0 +1,158 @@
+.checkmark {
+    width: 60px;
+    background-color: white;
+    height: 60px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 70%;
+    display: flex;
+}
+
+.illustrationsvg {
+    width: auto;
+    height: 30px;
+    margin: auto auto 0 auto;
+    cursor: pointer;
+    border-radius: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+@media (max-width: 850px) {
+    .checkmark {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        margin: 15px;
+    }
+    .illustrationsvg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .checkmark {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        margin: 7px;
+    }
+    .illustrationsvg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 620px) {
+    .checkmark {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        margin: 7px;
+    }
+    .illustrationsvg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 555px) {
+    .checkmark {
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        margin: 10px;
+    }
+    .illustrationsvg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 510px) {
+    .checkmark {
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        margin: 8px;
+    }
+    .illustrationsvg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .checkmark {
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        margin: 7px;
+    }
+    .illustrationsvg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 470px) {
+    .checkmark {
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        margin: 3px;
+    }
+    .illustrationsvg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .checkmark {
+        width: 45px;
+        height: 45px;
+        padding: 12px;
+        margin: 3px ;
+    }
+    .illustrationsvg {
+        width: 22px;
+        height: 20px;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .checkmark {
+        width: 35px;
+        height: 35px;
+        padding:9px;
+        margin: 5px;
+    }
+    .illustrationsvg {
+        width: 20px;
+        height: 20px;
+    }
+}
+.checkmark:hover {
+    /*background-color: blue;*/
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    /*vertical-align: middle;*/
+    /*overflow: hidden;*/
+    /*transition: all 0.1s ease-in-out;*/
+}
+
+@media (max-width: 350px) {
+    .checkmark {
+        padding: 10px;
+        margin: 3px;
+    }
+    .illustrationsvg {
+        width: 16px;
+        height: 16px;
+    }
+}

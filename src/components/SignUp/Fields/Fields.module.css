@@ -1,0 +1,168 @@
+.Form {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.Email_Input {
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    z-index: 2;
+    border: none;
+    margin: 35px auto;
+    border-bottom: 1px solid #2ba1ff;
+}
+
+.Email_Label{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    color: #2ba1ff;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 16px;
+    top: 16%;
+    transition: 0.2s;
+}
+
+.Email_Input:focus {
+    border-bottom: 2px solid #2ba1ff;
+    outline: none;
+}
+
+.Email_Input:focus + label , .Email_Input:valid + label {
+    top: 5%;
+    color: #2ba1ff;
+    opacity: 1.0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Email_Input:required {
+    box-shadow:none;
+}
+
+.Email_Input:required:valid{
+    border-bottom: 2px solid #2ba1ff;
+}
+
+.Pass_Input:required:valid{
+    border-bottom: 2px solid #2ba1ff;
+}
+
+.Pass_Input:required {
+    box-shadow:none;
+}
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.Pass_Input {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    margin: 15px auto;
+    border-bottom: 1px solid #2ba1ff;
+}
+
+.Pass_Label{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+    color: #2ba1ff;
+    top: 49%;
+    transition: 0.2s;
+}
+
+.Pass_Input:focus {
+    border-bottom: 2px solid #2ba1ff;
+    outline: none;
+}
+
+.Pass_Input:focus + label , .Pass_Input:valid + label {
+    top: 38%;
+    color: #2ba1ff;
+    opacity: 1.0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.Login_Btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    border: 1px solid #2ba1ff;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Login_Btn:hover {
+    background-color: #2ba1ff;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .Form {
+        width: 100%;
+        margin: 0;
+    }
+    .Pass_Input {
+        font-size: 15px;
+        margin: 15px auto;
+        font-weight: normal;
+    }
+    .Email_Input {
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .Pass_Label{
+        font-size: 15px;
+    }
+    .Email_Label{
+        font-size: 15px;
+    }
+    .Login_Btn {
+        border: 0;
+        background-color: #2ba1ff;
+        color: white;
+    }
+}
+
+@media (max-width: 450px) {
+    .Form {
+        width: 100%;
+        margin: 0;
+    }
+    .Pass_Input {
+        font-size: 15px;
+        margin: 15px auto;
+        font-weight: normal;
+    }
+    .Email_Input {
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .Pass_Label{
+        font-size: 15px;
+    }
+    .Email_Label{
+        font-size: 15px;
+    }
+    .Pass_Input:focus + label , .Pass_Input:valid + label {
+        color: #2ba1ff;
+        opacity: 1.0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .Email_Input:focus + label , .Email_Input:valid + label {
+        color: #2ba1ff;
+        opacity: 1.0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

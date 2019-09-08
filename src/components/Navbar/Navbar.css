@@ -1,0 +1,217 @@
+.Navbar{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    grid-column-start: 1;
+    height: 100%;
+    grid-column-end: 3;
+}
+
+.Header {
+    width: 100%;
+    height: auto;
+    padding: 0 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    /*background-color: #f7fff3;*/
+    background-color: white;
+    grid-column-start: 1;
+    /*box-shadow: inset 0 0 3px 0 gray;*/
+    box-shadow: inset 0 -2px 3px -2px gray;
+    grid-column-end: 2;
+}
+
+.NavigationItem {
+    margin: auto 15px;
+    font-size: 16px;
+    width: auto;
+    height: 100%;
+}
+
+
+.NavigationItem a {
+    color: black;
+    outline: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.7;
+    padding: 0 20px;
+    height: 100%;
+    width: auto;
+    border-bottom:  2px solid transparent;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active {
+    border-bottom:  2px solid #2ba1ff;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+
+.horizdiv {
+    height: 3px;
+    width: 100%;
+    background-color: #2ba1ff;
+}
+
+.Loginbtn {
+    background-color: white;
+    margin: 10px 5% 10px auto;
+    width: 150px;
+    font-weight: normal;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: 1px solid #2ba1ff;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+.Loginbtn:hover {
+    background-color: #2ba1ff;
+    margin: 10px 5% 10px auto;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.NavigationItem::-moz-focus-inner {
+    border: 0;
+    outline: none;
+}
+
+
+@media screen and (max-width: 850px) {
+    .MenuSVG {
+        cursor: pointer;
+    }
+
+    .hamburgermenu {
+        height: 50px;
+        width: 100%;
+        background-color: #282c34;
+    }
+    .hamburgermenu:hover {
+        cursor: pointer;
+    }
+    .Navbar {
+        overflow: hidden;
+    }
+
+    .NavigationItem a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .Loginbtn {
+        margin: 10px 5% 10px auto;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .NavigationItem a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .Loginbtn {
+        margin: 10px 5px 10px auto;
+        width: 150px;
+    }
+    .Loginbtn:hover {
+        margin: 10px 5px 10px auto;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /*.NavigationItem a {*/
+        /*font-size: 16px;*/
+        /*padding: 0 10px;*/
+    /*}*/
+    /*.Loginbtn {*/
+        /*margin: 10px 5px 10px auto;*/
+        /*height: 45px;*/
+        /*padding: 7px;*/
+        /*width: 150px;*/
+    /*}*/
+    /*.Loginbtn:hover {*/
+        /*margin: 10px 5px 10px auto;*/
+        /*width: 150px;*/
+    /*}*/
+    .Header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .MenuSVG {
+        width: 80px;
+        height: 100%;
+    }
+
+    .NavigationItem a {
+        font-size: 14px;
+        flex-grow: 1;
+        padding: 0 5px;
+    }
+
+    .SVGContainer {
+        width: 70%;
+        margin-left: 5px;
+    }
+
+    .Loginbtn {
+        width: 23%;
+        margin: 10px 10px 10px auto;
+    }
+    .Loginbtn:hover {
+        width: 23%;
+        margin: 10px 10px 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .MenuSVG {
+        width: 80px;
+        height: 100%;
+    }
+
+    .NavigationItem a {
+        font-size: 14px;
+        flex-grow: 1;
+        padding: 0 5px;
+    }
+
+    .SVGContainer {
+        width: 70%;
+        margin-left: 5px;
+    }
+
+    .Loginbtn {
+        width: 30%;
+        height: 45px;
+        padding: 0;
+        margin: 10px 10px 10px auto;
+    }
+    .Loginbtn:hover {
+        width: 30%;
+        height: 45px;
+        padding: 0;
+        margin: 10px 10px 10px auto;
+    }
+}
